@@ -37,7 +37,7 @@ class LoginForm extends Form {
     
     
     render() {
-        if (auth.getCurrentUser()) return <Redirect to="/" />
+        if (auth.getCurrentUser()) return <Redirect to="/dashboard" />
 
        return (
             <div>
