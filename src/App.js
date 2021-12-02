@@ -44,7 +44,7 @@ const App = () => {
   
             <Route path="/not-found" component={NotFound} />
 
-            <Redirect from="/" exact to="/users" />
+            <Redirect from="/" exact to="/login" />
 
             <Redirect to="/not-found" />
           </Switch>
