@@ -16,9 +16,15 @@ const App = () => {
   useEffect(() => {
     let user = auth.getCurrentUser()
 
-    setUser(user)
-    return user
-  },[user])
+    // if(user.name){
+    //   setUser(user)
+    // }
+    if(user){
+      setUser(user)
+    }
+
+    // return user
+  },[])
 
     return (
       <React.Fragment>

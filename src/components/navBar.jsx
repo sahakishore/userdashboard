@@ -2,6 +2,9 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = ({ user }) => {
+
+  // console.log("User from Nav: ", user)
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="Login">
@@ -22,7 +25,7 @@ const NavBar = ({ user }) => {
         <div className="navbar-nav">
     
       
-      {!user && 
+      {!user.name && 
       <React.Fragment>
       <NavLink className="nav-item nav-link" to="/login">
           Login
@@ -35,7 +38,7 @@ const NavBar = ({ user }) => {
       }
 
           
-      {user && 
+      {user.name && 
       <React.Fragment>
       <div className="nav-item nav-link">
               {"Hello "+user.name}

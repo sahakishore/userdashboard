@@ -1,7 +1,17 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css'
 
-const Dashboard = ({user})=> {
+const Dashboard = ({ user }) => {
+    
+//     let history = useHistory()
+
+//   if (!user)
+//     return (
+//      history.push("/login")
+//     )
+
+
     return (
         <>
            <div className="my-md-4 d-flex justify-content-center align-item-conter"><div>Enjoy your Dashboard</div></div> 
